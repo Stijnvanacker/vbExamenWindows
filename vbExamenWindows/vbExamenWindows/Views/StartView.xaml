@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="vbExamenWindows.Views.StartView"
+             xmlns:viewModel="clr-namespace:vbExamenWindows.ViewModel">
+  <ContentView.BindingContext>
+    <viewModel:StartViewModel></viewModel:StartViewModel>
+  </ContentView.BindingContext>
+  <ContentView.Content>
+    <Grid>
+      
+      <Grid.RowDefinitions>
+        <RowDefinition Height="Auto"></RowDefinition>
+        <RowDefinition Height="*"></RowDefinition>
+        <RowDefinition Height="*"></RowDefinition>
+        <RowDefinition Height="Auto"></RowDefinition>
+        <RowDefinition Height="Auto"></RowDefinition>
+        <RowDefinition Height="Auto"></RowDefinition>
+      </Grid.RowDefinitions>
+      
+      <Label Grid.Row="0">Schoenen</Label>
+      <Image Grid.Row="1" Source="weasel.jpg"></Image>
+      <Image Grid.Row="2" Source="weasel.jpg"></Image>
+      <Label Grid.Row="3">Koop hier onze fantastische schoenen</Label>
+      <Button Grid.Row="4" Text="Bekijk prijzen" Command="{Binding bekijkPrijzenCommand}"></Button>
+      <Button Grid.Row="5" Text="Contacteer ons"></Button>
+    </Grid>
+  </ContentView.Content>
+</ContentView>

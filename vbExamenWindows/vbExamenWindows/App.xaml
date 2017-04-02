@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="vbExamenWindows.App" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             d1p1:Ignorable="d" 
+             xmlns:d1p1="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vm="clr-namespace:vbExamenWindows.ViewModel"
+             xmlns:views="clr-namespace:vbExamenWindows.Views">
+  <Application.Resources>
+    <!-- Application resource dictionary -->
+    <!--<DataTemplate DataType="{x:Type vm:StartViewModel}">
+      <views:StartView />
+    </DataTemplate>
+
+    <DataTemplate DataType="{x:Type vm:PrijzenViewModel}">
+      <views:PrijzenView />
+    </DataTemplate>-->
+    
+  </Application.Resources>
+</Application>

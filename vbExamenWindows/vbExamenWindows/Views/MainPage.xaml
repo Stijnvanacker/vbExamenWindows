@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:vbExamenWindows"
+             xmlns:viewModel="clr-namespace:vbExamenWindows.ViewModel"
+             x:Class="vbExamenWindows.MainPage">
+
+  <ContentPage.BindingContext>
+    <viewModel:MainViewModel></viewModel:MainViewModel>
+  </ContentPage.BindingContext>
+  <Grid>
+    <Grid.RowDefinitions>
+      <RowDefinition Height="Auto"></RowDefinition>
+      <RowDefinition Height="Auto"></RowDefinition>
+      <RowDefinition></RowDefinition>
+    </Grid.RowDefinitions>
+    <Label Grid.Row="0" FontSize="14" Text="Verkoop app"></Label>
+    <Label Grid.Row="1" FontSize="14" Text="Verkoop app"></Label>
+    <ContentView Grid.Row="2" Content="{Binding CurrentView}"></ContentView>
+  </Grid>
+
+</ContentPage>
